@@ -2,12 +2,6 @@
 
 **FourDimensionalProjection.wl**, **FourDimensionalProjection2.wl**, and **LocalRing.wl** are three Mathematica packages for constructing **singularity-free bases** of Master Integrals. These packages implement algorithms to find Feynman integral bases where the reduction of any integral through integration-by-parts (IBP) relations does not produce coefficients that are singular as the dimensional regularization parameter $\epsilon \to 0$ (where $d = d_0 - 2\epsilon$, with $d_0$ being a positive integer representing the spacetime dimension).
 
-## Copyright
-
-© 2025 S. De Angelis, D. Kosower, R. Ma, Z. Wu, and Y. Zhang
-
-This software is provided for academic and research purposes. If you use this software in your research, please cite the accompanying paper "Singularity-Free Feynman Integral Bases".
-
 ## Background
 
 Standard IBP reduction methods typically yield Feynman integral bases where the reduction of some integrals gives rise to coefficients that become singular as $\epsilon \to 0$. These singular coefficients can also appear in scattering amplitudes, obscuring their structure and making their evaluation more complicated. This repository provides tools to construct bases that are free from such singularities.
@@ -95,3 +89,9 @@ Get["LocalRing.wl"]
 ## Reference
 
 For detailed background and algorithm descriptions, please refer to the accompanying paper "Singularity-Free Feynman Integral Bases" by S. De Angelis, D. Kosower, R. Ma, Z. Wu, and Y. Zhang.
+
+## Copyright
+
+© 2025 S. De Angelis, D. Kosower, R. Ma, Z. Wu, and Y. Zhang
+
+This software is provided for academic and research purposes. If you use this software in your research, please cite the accompanying paper "Singularity-Free Feynman Integral Bases".
