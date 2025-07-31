@@ -22,7 +22,7 @@ These packages implement two general algorithms for constructing singularity-fre
 
 ## Usage
 
-These Mathematica packages are designed to work with existing IBP reduction workflows to produce singularity-free master integral bases that facilitate cleaner amplitude calculations and avoid spurious singularities in intermediate steps. The packages integrate easily with [NeatIBP](https://github.com/yzhphy/NeatIBP) for streamlined IBP reduction workflows.
+These Mathematica packages are designed to work with existing IBP reduction workflows to produce singularity-free master integral bases that facilitate cleaner amplitude representations and avoid spurious singularities in intermediate steps. The packages integrate easily with [NeatIBP](https://github.com/yzhphy/NeatIBP) for streamlined IBP reduction workflows.
 
 ### Main Functions
 
