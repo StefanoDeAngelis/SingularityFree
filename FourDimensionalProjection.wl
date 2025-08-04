@@ -1,5 +1,10 @@
 (* ::Package:: *)
 
+permutationMatrix[p_List]:=
+	SparseArray[
+		IdentityMatrix[Length[p]][[p]]
+	] (*in earlier versions of Mathematica, PermutationMatrix was not implemented yet. This is an in-house implementation.*)
+
 
 finiteCoefficients[ibps_List,G_(*integrals*),eps_(*dimreg parameter*)]:=
 	Block[
@@ -55,7 +60,7 @@ finiteCoefficients[ibps_List,G_(*integrals*),eps_(*dimreg parameter*)]:=
 			
 			mis=Complement[Range[Length@allGs],reducible];(*the position of the MIs with respect to the IBPs with eps=0*)
 		
-			shuffle=PermutationMatrix[Join[reducible,mis]];(*a matrix which shuffles the order of the integrals to prioritise the MIs with respect to the the identities at eps=0*)
+			shuffle=permutationMatrix[Join[reducible,mis]];(*a matrix which shuffles the order of the integrals to prioritise the MIs with respect to the the identities at eps=0*)
 			
 			allGs=shuffle . allGs;
 			localibps=localibps . Inverse[shuffle];
